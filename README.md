@@ -1,69 +1,70 @@
-# Machine-Learning-Model-Comparison-for-Rain-and-Diabetes-Prediction-
-This project explores the use of machine learning techniques—*K-Nearest Neighbors (KNN)* and *Bayesian classification—to predict outcomes on two distinct datasets: **weather conditions* and *diabetes diagnosis*.
+# Machine Learning Model Comparison: Q-Learning vs SVM for Rain & Diabetes Prediction
+
+This project compares two machine learning techniques—**Q-Learning** (Reinforcement Learning) and **Support Vector Machine (SVM)**—to predict outcomes across two domains: **weather forecasting** (rain prediction) and **diabetes diagnosis**.
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Files
 
-
-├── Bayesian_Algorithm.ipynb                 # Weather prediction using Naive Bayes
-├── Bayesian_Algorithm_Diabetes.ipynb        # Diabetes prediction using Naive Bayes
-├── MLDM_KNN_Model_Weather.ipynb             # Weather prediction using KNN
-├── MLDM_KNN_Model_Diabetes.ipynb            # Diabetes prediction using KNN
-
+- `Q-learning.ipynb` – Weather & diabetes prediction using Q-Learning  
+- `SVM.ipynb` – Weather & diabetes prediction using Support Vector Machine  
 
 ---
 
 ## 🎯 Objective
 
-To compare and evaluate two classification models (KNN and Naive Bayes) across weather and medical datasets, focusing on prediction accuracy, simplicity, and generalisability.
+To evaluate and compare Q-Learning and SVM models on two real-world datasets, assessing their performance in terms of accuracy, learning efficiency, and classification capability.
 
 ---
 
 ## 🧪 Models Used
 
-1. *K-Nearest Neighbors (KNN)*
-2. *Naive Bayes Classifier*
-
-Each model was applied to:
-- 🌦 *Weather Data*: Predicting rainy vs. non-rainy days
-- 🩺 *Diabetes Data*: Predicting the likelihood of diabetes diagnosis
+- **Q-Learning**: Reinforcement learning algorithm applied to discrete state-action spaces.  
+- **Support Vector Machine (SVM)**: Supervised classification model for structured data.
 
 ---
 
-## ⚙ Tools & Technologies
+## 📊 Use Cases
 
-- Python 3.x
-- Jupyter Notebooks
-- Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
-
----
-
-## 📊 Evaluation Metrics
-
-- Accuracy
-- Confusion Matrix
-- Classification Report (Precision, Recall, F1-Score)
-- ROC Curve (where applicable)
+- **Weather Dataset**: Predicting rainy vs non-rainy days based on historical meteorological features.  
+- **Diabetes Dataset**: Predicting likelihood of diabetes diagnosis using clinical indicators.
 
 ---
 
-## 📝 Summary of Results
+## ⚙ Tools & Libraries
 
-| Dataset   | Model      | Accuracy (approx) |
-|-----------|------------|-------------------|
-| Weather   | KNN        | 80–90%            |
-| Weather   | Naive Bayes| 85–95%            |
-| Diabetes  | KNN        | 75–85%            |
-| Diabetes  | Naive Bayes| 80–90%            |
+- Python 3.x  
+- Jupyter Notebooks  
+- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `gym` (optional)
+
+---
+
+## 📈 Evaluation Metrics
+
+- Accuracy  
+- Confusion Matrix  
+- Classification Report (Precision, Recall, F1-Score)  
+- Learning Curve (Q-Learning)  
+- ROC Curve (SVM)
+
+---
+
+## 📝 Results Overview
+
+| Dataset   | Model       | Accuracy (Approx) |
+|-----------|-------------|-------------------|
+| Weather   | Q-Learning  | 80–90%            |
+| Weather   | SVM         | 85–95%            |
+| Diabetes  | Q-Learning  | 75–85%            |
+| Diabetes  | SVM         | 80–90%            |
 
 ---
 
 ## 🧠 Key Learnings
 
-- KNN performed well on both datasets with proper scaling.
-- Naive Bayes was faster and effective with categorical data.
-- Preprocessing significantly impacted prediction performance.
+- Q-Learning adapts over episodes and is effective in dynamic environments.  
+- SVM performs well with structured data and requires minimal hyperparameter tuning.  
+- Data preprocessing plays a crucial role in improving model performance.
 
 ---
 
